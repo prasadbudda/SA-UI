@@ -1,0 +1,8 @@
+<div>
+   <ul>
+    {{questions[0].query}}
+    <li *ngFor="let options of questions[0].options">
+    <md-checkbox (change)="onChkChange(options.value)">{{options.value}}</md-checkbox>
+   </li>
+</ul>
+</div>

@@ -1,0 +1,10 @@
+<b>{{ title }}</b>
+<p>{{ message }}</p>
+
+
+<p style="color:red" [hidden]="!valueIncorrect">The answer is incorrect! You will have one more question to verify your identity.</p>
+
+<app-verification-question></app-verification-question>
+
+<button type="button" md-raised-button 
+    (click)="dialogSubmit(false)" style="float:right">Submit</button>
